@@ -35,14 +35,14 @@ class Predictor(cog.predictor):
         os.makedirs(self.opts.input_folder, exist_ok=True)
         os.makedirs(self.opts.output_folder, exist_ok=True)
 
-    @cog.input("image", type=Path, help="input image")
-    @cog.input(
+    @cog.Input("image", type=Path, help="input image")
+    @cog.Input(
         "HR",
         type=bool,
         default=False,
         help="whether the input image is high-resolution",
     )
-    @cog.input(
+    @cog.Input(
         "with_scratch",
         type=bool,
         default=False,

@@ -21,6 +21,6 @@ build:
     - "PySimpleGUI==4.46.0"
     - "ipython==7.19.0"
   run:
-    - pip install dlib
+    - pip install dlib cog
 
 predict: "predict.py:Predictor"
